@@ -8,6 +8,7 @@ def solicitar_moneda(moneda):
             return moneda
         else:
             print(f"❌ Moneda no válida. Las opciones válidas son:{catalogo_monedas}")
+            break
 
 
 def desea_continuar():

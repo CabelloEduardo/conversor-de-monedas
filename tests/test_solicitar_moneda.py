@@ -15,3 +15,15 @@ def test_desea_continuar(monkeypatch):
     # Ahora simulamos que el usuario ingresa 'n'
     monkeypatch.setattr('builtins.input', lambda _: 'n')
     assert desea_continuar() == False
+
+def test_solicitar_moneda_valida_minuscula(monkeypatch):
+    # Simulamos que el usuario ingresa una opción válida pero en minusculas
+    entrada_valida_minuscula = "mxn"
+    monkeypatch.setattr('builtins.input', lambda _: entrada_valida_minuscula)
+    assert solicitar_moneda(entrada_valida_minuscula) == "MXN"
+
+def test_solicitar_monedas_invalida(monkeypatch):
+    # Simulamos que el usuario ingresa una opción inválida
+    entrada_invalida = jpn
+    monkeypatch.setattr('builtins.input', lambda _: entrada_invalida)
+    assert solicitar_moneda(entrada_invalida) == False

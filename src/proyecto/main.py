@@ -1,4 +1,5 @@
-from metodos import solicitar_moneda, catalogo_monedas, desea_continuar
+from metodos import solicitar_moneda, desea_continuar
+from metodos import catalogo_monedas
 
 def main():
     print("💵💶 Bienvenido al conversor de monedas 💴💷")

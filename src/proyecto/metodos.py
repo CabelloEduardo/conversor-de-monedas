@@ -3,7 +3,7 @@ catalogo_monedas = ["USD", "EUR", "MXN"]
 def solicitar_moneda(moneda):
     """Solicita una moneda válida al usuario hasta que la entrada sea correcta."""
     while True:
-        moneda.upper()
+        moneda = moneda.upper()
         if moneda in catalogo_monedas:
             return moneda
         else:

@@ -24,6 +24,6 @@ def test_solicitar_moneda_valida_minuscula(monkeypatch):
 
 def test_solicitar_monedas_invalida(monkeypatch):
     # Simulamos que el usuario ingresa una opción inválida
-    entrada_invalida = jpn
+    entrada_invalida = "jpn"
     monkeypatch.setattr('builtins.input', lambda _: entrada_invalida)
     assert solicitar_moneda(entrada_invalida) == False

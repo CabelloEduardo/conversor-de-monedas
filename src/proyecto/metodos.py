@@ -9,8 +9,6 @@ def solicitar_moneda(mensaje: str) -> str:
         else:
             print(f"❌ Moneda no válida. Las opciones válidas son: {catalogo_monedas}")
 
-
-def desea_continuar():
+def desea_continuar() -> bool:
     """Pregunta al usuario si desea realizar otra operación."""
-    respuesta = input("¿Deseas hacer otra operación? (s/n): ").strip().lower()
-    return respuesta == 's'
+    return input("¿Deseas hacer otra operación? (s/n): ").strip().lower() == 's'

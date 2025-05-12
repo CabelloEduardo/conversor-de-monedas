@@ -1,4 +1,4 @@
-from metodos import solicitar_moneda, desea_continuar
+from metodos import solicitar_moneda, solicitar_cantidad, desea_continuar
 from metodos import catalogo_monedas
 
 def main():
@@ -9,7 +9,7 @@ def main():
     while True:
         moneda_origen = solicitar_moneda(mensaje_solicitar_moneda_origen)
         moneda_destino = solicitar_moneda(mensaje_solicitar_moneda_destino)
-
+        cantidad_a_convertir = solicitar_cantidad()
         if not desea_continuar():
             print("👋 ¡Gracias por usar el conversor de monedas!")
             break

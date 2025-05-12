@@ -11,7 +11,7 @@ def main():
         moneda_destino = solicitar_moneda(mensaje_solicitar_moneda_destino)
 
         if not desea_continuar():
-            print("👋 ¡Gracias por usar la calculadora!")
+            print("👋 ¡Gracias por usar el conversor de monedas!")
             break
 
 if __name__ == "__main__":

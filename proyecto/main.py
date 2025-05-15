@@ -1,5 +1,6 @@
 from metodos import solicitar_moneda, solicitar_cantidad, desea_continuar
 from metodos import catalogo_monedas
+from data.data_monedas import CATALOGO_MONEDAS
 
 def main():
     mensaje_solicitar_moneda_origen = f"Por favor elija la mondeda de origen {catalogo_monedas}: "

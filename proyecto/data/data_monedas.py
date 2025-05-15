@@ -1,6 +1,6 @@
 # data/monedas.py
 
-from moneda import Moneda
+from modelos.moneda import Moneda
 
 USD = Moneda("USD", "$", "Dólar estadounidense")
 EUR = Moneda("EUR", "€", "Euro")
